@@ -1,6 +1,6 @@
 *{box-sizing: border-box;
 	margin:0;
-	padding:10px;  /* maybe take this out? */
+	padding:0px;  /* maybe take this out? */
 	font-family:arial;
 }
 
@@ -10,31 +10,24 @@ section{
 	float: left;
 }
 
-#pageA{
-	background-color: pink;
+.page_section:nth-child(even) {
+	background-color: white;
+	color: black;
 }
 
-#pageB{
-	background-color: blue;
+.page_section:nth-child(odd) {
+	background-color: black;
+	color: white;
 }
 
-#pageC{
-	background-color: green;
-}
-
-#pageD{
-	background-color: gray;
-}
-
-#pageE{
-	background-color: aqua;
-}
 
 nav{
 	width: 100%;
 	position: fixed;
 	z-index:1;
-	margin-top:10px;
+	margin-top:0px;
+	background-color: white;
+	padding: 15px;
 }
 
 ul {
@@ -49,8 +42,9 @@ ul li {
 }
 
 ul li a{
-	color: white;
+	color: black;
 	text-decoration: none;
+	font-size: 1.1em;
 }
 
 ul li a:hover {
@@ -58,22 +52,33 @@ ul li a:hover {
 }
 
 h1 {
-	color: white;
 	text-align: center;
-	margin-top: 150px;
-
+	margin-top: 100px;
 }
 
 .grid-container {
 	display: grid;
-	grid-gap: 5px;
+	width: 0;
+	margin: 40px auto;
+
+	grid-row-gap: 20px;
+	grid-column-gap: 20px;
 	/* the min-max declaration makes sure that the columns always fit
     the full width of the main container and the columns stay at the min of 100px, */
-	grid-template-columns: repeat(auto-fit, min-max(100px, 1fr));
-	grid-template-rows: repeat(2, 100px);
-    grid-auto-rows: 100px;
+	/*grid-template-columns: repeat(3, 350px);*/
+	grid-template-columns: repeat(3, minmax(350px, 1fr));
+	grid-template-rows: repeat(2, 1fr);
+	justify-content: center;
+	
 }
 
+.item
+{
+	object-fit: cover;
+	padding: 130px;
+	background-color: gray;
+	
+}
 .grid-container > div {
   display: flex;
   justify-content: center;
@@ -81,5 +86,12 @@ h1 {
   font-size: 2em;
   color: #ffeead;
   background-color: gray;
+}
+
+.grid-container2{
+	display: grid;
+	margin: 0;
+	grid-template-rows: repeat(4, auto);
+	grid-template-columns: repeat(5, auto);
 }
 
