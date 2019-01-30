@@ -77,7 +77,15 @@ h1 {
 	object-fit: cover;
 	padding: 130px;
 	background-color: gray;
-	
+}
+
+.item2
+{
+	height: 200px;
+	width: 200px;
+	padding: 150px;
+	margin: 10px;
+	background-color: gray;
 }
 .grid-container > div {
   display: flex;
@@ -88,10 +96,11 @@ h1 {
   background-color: gray;
 }
 
-.grid-container2{
-	display: grid;
-	margin: 0;
-	grid-template-rows: repeat(4, auto);
-	grid-template-columns: repeat(5, auto);
+.flex-container2{
+	height: 500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center; /* this isnt going to work really bc the parent div height is weird. 
 }
 
