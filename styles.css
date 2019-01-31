@@ -27,6 +27,7 @@ nav{
 	z-index:1;
 	margin-top:0px;
 	background-color: white;
+	opacity: .6;
 	padding: 15px;
 }
 
@@ -87,18 +88,18 @@ h1 {
 	margin: 10px;
 	background-color: gray;
 }
-.grid-container > div {
-  display: flex;
+/*  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2em;
   color: #ffeead;
   background-color: gray;
-}
+}*/
 
 .flex-container2{
-	height: 500px;
+	height: 650px;
 	display: flex;
+	/*flex: 1 1 700px;*/
 	flex-direction: row;
 	justify-content: center;
 	align-items: center; /* this isnt going to work really bc the parent div height is weird. 
