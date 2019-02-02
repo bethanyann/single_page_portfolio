@@ -5,28 +5,38 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<section id="pageA" class="page_section">
-
-		<nav>
-			<ul>
-				<li><a href="#pageA">Page A</a></li>
-				<li><a href="#pageB">Page B</a></li>
-				<li><a href="#pageC">Page C</a></li>
-				<li><a href="#pageD">Page D</a></li>
-				<li><a href="#pageE">Page E</a></li>
-			</ul>
-		</nav>
-		<h1>Page 1</h1>
+	<section id="pageA" class="page_section first_page">
+		<div>
+			<nav>
+				<ul>
+					<li class="nav_item left"><a href="#pageA">about</a></li>
+					<li class="nav_item left"><a href="#pageB">contact</a></li>
+					<li id="logo"><img src="images/b.png" alt="sample logo" width="60px" height="40px"></li>
+					<li class="nav_item right"><a href="#pageC">projects</a></li>
+					<li class="nav_item right"><a href="#pageD">stuff</a></li>
+					<!--<li><a href="#pageE">Page E</a></li>-->
+				</ul>
+			</nav>
+			<!-- background image covers the rest of this div 
+			<p id="first_page_text">hey. im bethany.</p>--> 
+			<h1>Hello! </h1>
+		</div>
 	</section>
 
 	<section id="pageB" class="page_section">
-		<h1>Page 2</h1>
+		<h1>contact</h1>
 		
 	</section>
 
-	<section id="pageC" class="page_section">
-		<h1>Page 3</h1>
-		<div class ="grid-container">
+	<section id="pageC projects" class="page_section">
+		<h1>work</h1>
+			<div class="flex-container2">
+				<div class="item2">1</div>
+		        <div class="item2">2</div>
+		        <div class="item2">3</div>
+		        <div class="item2">4</div>
+			</div>
+		<!--<div class ="grid-container">
 			
 			<div class="item">1</div>
 	        <div class="item">2</div>
@@ -35,21 +45,16 @@
 	        <div class="item">5</div>
 	        <div class="item">6</div>
         	
-    	</div>
+    	</div>-->
 	</section>
 
 	<section id="pageD" class="page_section">
-		<h1></h1>
-		<div class="flex-container2">
-			<div class="item2">1</div>
-	        <div class="item2">2</div>
-	        <div class="item2">3</div>
-	        <div class="item2">4</div>
-		</div>
+		<h1>stuff</h1>
+		
 	</section>
 
 	<section id="pageE" class="page_section">
-		<h1>Page 5</h1>
+		<h1>more stuff</h1>
 	</section>
 
 </body>

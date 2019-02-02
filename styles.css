@@ -10,25 +10,41 @@ section{
 	float: left;
 }
 
-.page_section:nth-child(even) {
+.page_section:nth-child(odd) {
 	background-color: white;
 	color: black;
 }
 
-.page_section:nth-child(odd) {
+.page_section:nth-child(even) {
 	background-color: black;
 	color: white;
 }
 
+.first_page {
+	height: 100vh;
+	width: 100%;
+	background: url(images/main_image.jpg) no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
 
+/*#first_page_text{
+	font-size: 2.5em;
+	color: white;
+	margin: 500px 0px 0px 100px;
+
+}*/
+
+/************************ NAVIGATION **********************/
 nav{
 	width: 100%;
 	position: fixed;
 	z-index:1;
 	margin-top:0px;
-	background-color: white;
-	opacity: .6;
-	padding: 15px;
+	background: rgba(255,255,255, .7);
+	padding: 5px;
 }
 
 ul {
@@ -39,7 +55,14 @@ ul {
 
 ul li {
 	float:left;
+
+}
+.left{
 	margin-right: 30px;
+}
+
+.right{
+	margin-left: 30px;
 }
 
 ul li a{
@@ -52,16 +75,27 @@ ul li a:hover {
 	text-decoration: underline;
 }
 
+#logo{
+	margin: 0 auto;
+	width: auto;
+}
+
+.nav_item{
+	margin-top: 10px;
+}
+
+
 h1 {
 	text-align: center;
 	margin-top: 100px;
 }
 
+/************************ NAVIGATION **********************/
+
 .grid-container {
 	display: grid;
 	width: 0;
 	margin: 40px auto;
-
 	grid-row-gap: 20px;
 	grid-column-gap: 20px;
 	/* the min-max declaration makes sure that the columns always fit
@@ -70,7 +104,6 @@ h1 {
 	grid-template-columns: repeat(3, minmax(350px, 1fr));
 	grid-template-rows: repeat(2, 1fr);
 	justify-content: center;
-	
 }
 
 .item
@@ -102,6 +135,21 @@ h1 {
 	/*flex: 1 1 700px;*/
 	flex-direction: row;
 	justify-content: center;
-	align-items: center; /* this isnt going to work really bc the parent div height is weird. 
+	align-items: center; /* this isnt going to work really bc the parent div height is weird. */
 }
+
+
+/************************ MEDIA QUERIES **********************/
+
+/*@media screen and (max-width: 700px;)
+{
+	.nav-item{
+		display: none;
+	}
+
+	#logo{
+		margin-left: 10px;
+		float: left;
+	}
+}*/
 
